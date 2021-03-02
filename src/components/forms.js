@@ -36,9 +36,14 @@ class Forms extends Component {
             <div className="container row formField center-align">
                 <form className="col s12" onSubmit={this.handleSubmit}>
                     <div className="row">
-                        <div className="input-field">
+                        <div className="input-field col s11">
                             <label htmlFor="task" >Add todo</label>
                             <input id="task" type="text" className="validate" onChange={this.hangleChange} value={this.state.content}/>
+                        </div>
+                        <div className="addBtn col s1">
+                            <a href="#!" className="btn-floating btn-med waves-effect waves-light grey left addBtn" onClick={this.handleSubmit}>
+                                <i className="material-icons left">add</i>
+                            </a>
                         </div>
                     </div>
                 </form>
